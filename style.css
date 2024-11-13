@@ -1,0 +1,140 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s, ease-in-out;
+    user-select: none;
+}
+body{
+    background-color: #252A34;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* .turn-container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+} */
+.radio-toolbar {
+    margin: 10px;
+  }
+.radio-toolbar h3{
+    margin-top: 50px;
+}
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: black;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px;
+      margin-left: 30px;
+      margin-right: 30px;
+      
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: rgb(39, 119, 39);
+    cursor:pointer;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+      border: 2px dashed #444;
+      
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+      border-color: orange;
+  }
+
+  .radio-toolbar label.active-turn {
+    background-color: rgb(39, 119, 39); 
+    border-color: orange;
+}
+.active-turn {
+    background-color: rgb(39, 119, 39); 
+    color: white;
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    margin-top: 40px;
+}
+.row{
+    font-size: 8px;
+    /* display: flex; */
+}
+.row > div {
+    display: inline-block;
+    font-size: 100px;
+    border: solid 4px white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 100px;
+    cursor: pointer;
+  }
+
+.row > div:hover{
+    background-color: rgb(80, 77, 84);
+}
+
+  #statusText {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+#restartBtn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartBtn:hover {
+    background-color: rgb(39, 119, 39);
+}
+ 
+#strikeLine {
+    position: absolute;
+    height: 5px;
+    background-color: red;
+    display: none;
+    transform-origin: center;
+}
+  /*
+.square {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #08D9D6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    color: #252A34;
+} */

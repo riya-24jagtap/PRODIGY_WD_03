@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="radio-toolbar">
+            <h1>Welcome to the Tic-Tac-Toe Game!</h1>
+            <form action="#">
+                <input type="radio" id="x" name="Player" value="X" checked>
+                <label for="x" class="player-label" id="x-label">X Player</label>
+                
+                <input type="radio" id="o" name="Player" value="O">
+                <label for="o" class="player-label" id="o-label">O Player</label>
+            </form>
+        </div>
+       
+
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Play Again</button>
+    </div>
+       <div class="container">
+            <!------------first row--------------------->
+                <div class="row">
+                    <div id="1" class="square"></div>
+                    <div id="2" class="square"></div>
+                    <div id="3" class="square"></div>
+                </div>
+
+               <!------------second row--------------------->
+                <div class="row">
+                    <div id="4" class="square"></div>
+                    <div id="5" class="square"></div>
+                    <div id="6" class="square"></div>
+                </div>
+
+                <!------------third row--------------------->
+                <div class="row">
+                    <div id="7" class="square"></div>
+                    <div id="8" class="square"></div>
+                    <div id="9" class="square"></div>
+                </div>
+                <div class="strike" id="strikeLine"></div>
+            </div>
+        </div> 
+        
+        <script src="script.js"></script>
+    </body>
+        </html>
